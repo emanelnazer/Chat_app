@@ -1,3 +1,4 @@
+import 'package:chat_app/features/auth/presentation/view/widgets/login_body.dart';
 import 'package:flutter/material.dart';
 
 class Login extends StatelessWidget {
@@ -5,8 +6,10 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Text("Login Screen"),
+    return SafeArea(
+      child:Scaffold(
+        body: LoginBody(),
+      ),
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'dart:async';
-
-import 'package:chat_app/features/screen/login_screen.dart';
+import 'package:chat_app/core/constants/logo_image.dart';
+import 'package:chat_app/features/auth/presentation/view/login_view.dart';
 import 'package:flutter/material.dart';
-import 'package:chat_app/core/theme/color_app.dart';
+import 'package:chat_app/core/theme/colors.dart';
 
 class SplahScreen extends StatefulWidget {
   const SplahScreen({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class _SplahScreenState extends State<SplahScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 60),()=>Navigator.pushReplacement(context,
+    Timer(Duration(seconds: 3),()=>Navigator.pushReplacement(context,
         MaterialPageRoute(builder: (context)=>Login())));
   }
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _SplahScreenState extends State<SplahScreen> {
               child: Column(children: [
                 Container(
                   height: 150,
-                  child: Image.asset('assests/img.png'),
+                  child:Image.asset(Assests.logo_image)
                 ),
                 Text("Whatsapp",style: TextStyle(color:ColorApp.secondcolor,fontSize: 20,fontWeight: FontWeight.w400),)
               ],),

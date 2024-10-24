@@ -1,0 +1,28 @@
+import 'package:chat_app/core/theme/colors.dart';
+import 'package:chat_app/core/theme/styles.dart';
+import 'package:chat_app/features/auth/presentation/view/register_view.dart';
+import 'package:flutter/material.dart';
+
+class RegisterTitle extends StatelessWidget {
+  const RegisterTitle({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text("Don't have an account?", style:TextStyle(color: Colors.black,fontSize: 16)),
+        SizedBox(width: 5,),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Register_view()),
+            );
+          },
+          child: Text("Register Her", style: TextStyle(color:ColorApp.primarycolor, fontSize: 16)),
+        ),
+      ],
+    );
+  }
+}
