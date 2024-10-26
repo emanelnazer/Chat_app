@@ -3,8 +3,8 @@
 import 'package:chat_app/features/home/presenation/view/widget/personimage.dart';
 import 'package:flutter/material.dart';
 
-class Status extends StatelessWidget {
-  const Status({Key? key}) : super(key: key);
+class StatusBody extends StatelessWidget {
+  const StatusBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

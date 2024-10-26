@@ -1,12 +1,10 @@
+
 import 'package:chat_app/core/constants/data.dart';
-import 'package:chat_app/core/theme/colors.dart';
-import 'package:chat_app/core/theme/styles.dart';
 import 'package:chat_app/features/home/presenation/view/widget/personimage.dart';
-import 'package:chat_app/features/home/presenation/view/widget/personname.dart';
 import 'package:flutter/material.dart';
 
-class Calls extends StatelessWidget {
-  const Calls({Key? key}) : super(key: key);
+class Calls_body extends StatelessWidget {
+  const Calls_body({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
