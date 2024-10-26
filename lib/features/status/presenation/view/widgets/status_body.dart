@@ -1,9 +1,7 @@
-import 'package:chat_app/core/theme/styles.dart';
-import 'package:chat_app/features/home/presenation/view/widget/personimage.dart';
-import 'package:chat_app/features/home/presenation/view/widget/personname.dart';
-import 'package:flutter/material.dart';
 
-import '../../../../../core/constants/data.dart';
+
+import 'package:chat_app/features/home/presenation/view/widget/personimage.dart';
+import 'package:flutter/material.dart';
 
 class Status extends StatelessWidget {
   const Status({Key? key}) : super(key: key);

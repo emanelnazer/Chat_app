@@ -1,7 +1,7 @@
 import 'package:chat_app/core/theme/colors.dart';
 import 'package:chat_app/features/home/presenation/view/widget/calls.dart';
 import 'package:chat_app/features/home/presenation/view/widget/chats.dart';
-import 'package:chat_app/features/home/presenation/view/widget/status.dart';
+import 'package:chat_app/features/status/presenation/view/widgets/status_body.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavgationBar extends StatefulWidget {
