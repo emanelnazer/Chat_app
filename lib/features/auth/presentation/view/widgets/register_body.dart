@@ -7,6 +7,7 @@ import 'package:chat_app/features/auth/presentation/view/widgets/pass_field.dart
 import 'package:chat_app/features/auth/presentation/view/widgets/phone_field.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/register_title.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/signin_title.dart';
+import 'package:chat_app/features/home/presenation/view/widget/home_body.dart';
 import 'package:flutter/material.dart';
 
 class RegisterBody extends StatefulWidget {
@@ -51,7 +52,12 @@ class _RegisterBodyState extends State<RegisterBody> {
               },
             ),
             SizedBox(height: 30,),
-            LoginButton(passwordcontroller:passwordcontroller, emailcontroller: emailcontroller, onsucess: () {  },),
+            LoginButton(passwordcontroller:passwordcontroller, emailcontroller: emailcontroller, onsucess: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeBody()),
+              );
+            },),
             SizedBox(height: 30,),
             SignInTitle(),
 

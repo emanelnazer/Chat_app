@@ -12,7 +12,7 @@ class PasswordField extends StatelessWidget {
     return defaultText(
       type: TextInputType.visiblePassword,
       label: "Enter Your Password",
-      hint: "Your Password",.
+      hint: "Your Password",
       controll: passwordcontroller,
       prefix: Icons.lock,
       sufix:isPasswordVisibilty ? Icons.visibility : Icons.visibility_off,

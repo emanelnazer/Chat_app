@@ -4,6 +4,7 @@ import 'package:chat_app/features/auth/presentation/view/widgets/login_title.dar
 import 'package:chat_app/features/auth/presentation/view/widgets/logo_widget.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/pass_field.dart';
 import 'package:chat_app/features/auth/presentation/view/widgets/register_title.dart';
+import 'package:chat_app/features/home/presenation/view/widget/home_body.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatefulWidget {
@@ -46,7 +47,13 @@ class _LoginBodyState extends State<LoginBody> {
               },
             ),
             SizedBox(height: 30,),
-            LoginButton(passwordcontroller:passwordcontroller, emailcontroller: emailcontroller, onsucess: () {  },),
+            LoginButton(passwordcontroller:passwordcontroller, emailcontroller: emailcontroller, onsucess: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeBody()),
+              );
+            },
+            ),
             SizedBox(height: 30,),
             RegisterTitle(),
 

@@ -1,3 +1,4 @@
+import 'package:chat_app/features/home/presenation/view/widget/home_body.dart';
 import 'package:chat_app/features/splash/splah_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home:SplahScreen(),
+      home:HomeBody(),
     );
   }
 }
